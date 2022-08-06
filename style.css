@@ -1,0 +1,78 @@
+body{
+    background-color: slategray;
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Consolas';
+    display: block;
+    justify-content: center;
+}
+
+.title{
+    color: darkred;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.player-info{
+    text-align: center;
+    margin: auto;
+    color: darkred;
+    letter-spacing: 1px;
+    border-top: 3px yellowgreen dashed;
+    border-right: 5px blueviolet dashed;
+    border-left: 5px darkred dashed;
+    border-bottom: 3px orangered dashed;
+    border-radius: 30px;
+    width: 22%;
+    margin-bottom: 30px;
+    transition: .5s ease-in-out;
+    animation: regular 2s ease-in-out 0s infinite normal forwards;
+}
+
+@keyframes regular {
+	0% {
+        transform: scale(1);
+	}
+
+	50% {
+		transform: scale(1.1);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
+
+.player-info:hover{
+    letter-spacing: 2.5px;
+}
+
+.input-cta{
+    display: flex;
+    justify-content: center;
+}
+
+.input{
+    background-color: slateblue;
+    width: 90px;
+    height: 90px;
+    margin: 1.5px;
+}
+
+.btnConatiner{
+    display: flex;
+    justify-content: center;
+}
+
+.rstBtn{
+    width: 20%;
+    background-color: rgb(88, 11, 2);
+    color: white;
+    padding: 17px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 30px;
+    font-family: 'Consolas';
+    font-size: large;
+}
