@@ -63,7 +63,7 @@ function checkGameStatus() {
 
 function disableButtonsWhenGameIsWon(player) {
     for (let input of boxes) {
-        if (boxes.textContent === "") {
+        if (input.textContent === "") {
             input.toggleAttribute("disabled")
         }
     }
