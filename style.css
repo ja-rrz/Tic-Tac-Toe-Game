@@ -65,6 +65,10 @@ body{
     color: white;
 }
 
+.input:disabled{
+    background-color: rgb(53, 28, 209);
+}
+
 .btnConatiner{
     display: flex;
     justify-content: center;
