@@ -60,3 +60,21 @@ function checkGameStatus() {
     checker(0, 4, 8)
     checker(2, 4, 6)
 }
+
+function disableButtonsWhenGameIsWon(player) {
+    for (let input of boxes) {
+        if (boxes.textContent === "") {
+            input.toggleAttribute("disabled")
+        }
+    }
+    display.textContent = player + " Won the game"
+}
+
+function checkDraw() {
+    for (let input of boxes) {
+        if (input.textContent === "") {
+            return
+        }
+    }
+    display.textContent = "It's a Tie"
+}
