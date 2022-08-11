@@ -64,7 +64,7 @@ function checkGameStatus() {
 function disableButtonsWhenGameIsWon(player) {
     for (let input of boxes) {
         if (boxes.textContent === "") {
-            input.toggleAttribute("disabled")
+              input.addEventListener("click", ()=>{})
         }
     }
     display.textContent = player + " Won the game"
