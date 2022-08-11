@@ -63,6 +63,7 @@ body{
     align-items: center;
     justify-content: center;
     color: white;
+    border: 0;
 }
 
 .input:disabled{
