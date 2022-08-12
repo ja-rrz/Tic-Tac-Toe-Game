@@ -16,7 +16,7 @@ for (let input of boxes) {
             lastValue = "X";
             display.textContent = "Player 2's turn to play";
             checkGameStatus();
-            checkDraw();
+            // checkDraw();
         }
 
         else{
@@ -24,7 +24,7 @@ for (let input of boxes) {
             lastValue = "O";
             display.textContent = "Player 1's turn to play";
             checkGameStatus();
-            checkDraw();
+            // checkDraw();
         }
     })
 }
@@ -35,6 +35,9 @@ controlBtn.addEventListener("click", () => {
 })
 
 function checker(first, second, third) {
+    if(display.textContent.includes("Won the game")){
+        return;
+    }
     if (
         boxes[first].textContent === "X" &&
         boxes[second].textContent === "X" &&
@@ -51,6 +54,8 @@ function checker(first, second, third) {
 }
 
 function checkGameStatus() {
+
+    //#endregion
     checker(0, 1, 2)
     checker(3, 4, 5)
     checker(6, 7, 8)
