@@ -44,12 +44,16 @@ function checker(first, second, third) {
         boxes[third].textContent === "X" 
     ) {
         disableButtonsWhenGameIsWon("Player 1")
+        return;
     } else if (
         boxes[first].textContent === "O" &&
         boxes[second].textContent === "O" &&
         boxes[third].textContent === "O" 
     ) {
         disableButtonsWhenGameIsWon("Player 2")
+    }
+    else {
+        checkDraw();
     }
 }
 
